@@ -4,18 +4,25 @@
 
 const persone = {
     name: "Alex",
-    tel: "+123456678",
+    tel: "+5653367895",
     parents: {
         mom: "Olga",
         dad: "Mike"
     }
 };
 
-// console.log(JSON.stringify(persone));
-
-// console.log(JSON.parse(JSON.stringify(persone)));
+// stringify превращает нужный обьект в нужный формат
 
 const clone = JSON.parse(JSON.stringify(persone));
 clone.parents.mom = "Ann";
 console.log(persone);
 console.log(clone);
+
+// Обратная ситуация (из JSON формата в простой обьект) (parse)
+
+console.log(JSON.parse(JSON.stringify(persone))); // - получили обьект
+
+
+
+
+
