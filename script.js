@@ -11,9 +11,12 @@ const persone = {
     }
 };
 
-// stringify превращает нужный обьект в нужный формат
+// stringify превращает нужный обьект в нужный формат подходящий для json
 
-const clone = JSON.parse(JSON.stringify(persone));
+console.log(JSON.stringify(persone.parents));
+
+
+const clone = JSON.parse(JSON.stringify(persone)); // - создали глубокий клон и он не зависит от основного обьекта
 clone.parents.mom = "Ann";
 console.log(persone);
 console.log(clone);
